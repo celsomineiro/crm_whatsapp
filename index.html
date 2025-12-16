@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhatsApp CRM</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet" />
+    
+    <!-- Tailwind Configuration -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#00a884",
+              "background-light": "#f0f2f5",
+              "background-dark": "#111b21",
+              "panel-light": "#ffffff",
+              "panel-dark": "#202c33",
+              "secondary-light": "#e9edef",
+              "secondary-dark": "#2a3942",
+              "message-out-light": "#d9fdd3",
+              "message-out-dark": "#005c4b",
+              "message-in-light": "#ffffff",
+              "message-in-dark": "#202c33",
+              "text-primary-light": "#111b21",
+              "text-primary-dark": "#e9edef",
+              "text-secondary-light": "#667781",
+              "text-secondary-dark": "#8696a0",
+              "border-light": "#e9edef",
+              "border-dark": "#222e35"
+            },
+            fontFamily: {
+              display: ['"Segoe UI"', "Helvetica Neue", "Helvetica", "Arial", "sans-serif"],
+            },
+            backgroundImage: {
+              'chat-pattern-light': "url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png')",
+              'chat-pattern-dark': "url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png')", 
+            }
+          },
+        },
+      };
+    </script>
+    <style>
+      body { font-family: 'Segoe UI', "Helvetica Neue", Helvetica, Arial, sans-serif; }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-thin::-webkit-scrollbar {
+          width: 6px;
+      }
+      .scrollbar-thin::-webkit-scrollbar-thumb {
+          background-color: rgba(0,0,0,0.2);
+      }
+      .dark .scrollbar-thin::-webkit-scrollbar-thumb {
+          background-color: rgba(255,255,255,0.2);
+      }
+      .dark .bg-chat-pattern-dark {
+          opacity: 0.06;
+      }
+      .bg-chat-pattern-light {
+          opacity: 0.4;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body class="bg-background-light dark:bg-background-dark text-text-primary-light dark:text-text-primary-dark overflow-hidden">
+    <div id="root"></div>
+  </body>
+</html>

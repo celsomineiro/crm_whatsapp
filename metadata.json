@@ -1,0 +1,5 @@
+{
+  "name": "WhatsApp CRM Clone",
+  "description": "A high-fidelity WhatsApp Web clone featuring a CRM-style interface, message list, and chat window using Tailwind CSS and React.",
+  "requestFramePermissions": []
+}
